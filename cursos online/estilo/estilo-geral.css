@@ -1,0 +1,122 @@
+/*CONFIGURAÇÃO GERAL PARA O SITE TODO*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    
+}
+
+#id-destaque-tablet-smartphone, #alerta {
+    display: none;
+}
+
+.navbar { /*Menu responsivo para telas menos*/
+    display: none;
+}
+
+ label, p, h1, h2, h3, h6 {
+    text-decoration: none;
+    color: darkorange;
+}
+section .tema-carousel {
+  color: black;
+}
+   
+
+
+
+
+a{
+    text-decoration: none;
+    color: darkorange;
+
+}
+a:hover {
+    color: rgb(53, 156, 156);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.inscreva-se { /*Botão - para se inscrever*/
+    padding: 4px 30px;
+    font-size: 16px;
+    border: 1px solid grey;
+    background-color: blue;
+    color: white;
+    transition: .2s;
+}
+
+    .inscreva-se:hover {
+        margin-left: 20px;
+        background-color: darkorange;
+        border-radius: 10px;
+        box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.404);        
+    }
+
+.menu { /*(Cab) opções menu > a*/
+    margin-left: 25px;
+    padding-bottom: 10px;
+    position: relative;   
+}
+
+    .menu::after { /*Animação das opções do menu*/
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3.8px;
+    background-color: black;;
+    transition: width 0.3s ease-in-out;
+    }
+    
+    .menu:hover::after { /*Activar a animação quando o mouse passar por cima*/
+    width: 100%;
+    }
+
+
+.font-titulo-section-no-white { /*Para os temas de sessão que não têm fundo branco*/
+    color: black;
+    font-weight: bolder;
+}
+
+.font-titulo-section-white { /*Para os temas de sessão que têm fundo branco*/
+    color: blue;
+    font-weight: bolder;
+}
+/* Aplique a animação a um elemento */
+.animated-element {
+    animation: rotate 2s linear infinite; /* Nome da animação, duração, tipo de temporização e iteração */
+}
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os ícones */
+}
+
+.redes-sociais img {
+    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+}
+/* Estilos para telas grandes (desktop) */
+@media screen and (min-width: 768px) {
+    /* Coloque estilos aqui para telas maiores, como tablets */
+}
+
+/* Estilos para telas menores (tablets e telefones) */
+@media screen and (max-width: 767px) {
+    /* Coloque estilos aqui para telas menores, como telefones */
+}
+body {
+    font-size: 16px; /* Tamanho base da fonte */
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px; /* Tamanho menor da fonte para telas menores */
+    }
+}
+

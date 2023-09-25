@@ -1,0 +1,21 @@
+.redes-sociais img {
+    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+}
+/* Estilos para telas grandes (desktop) */
+@media screen and (min-width: 768px) {
+    /* Coloque estilos aqui para telas maiores, como tablets */
+}
+
+/* Estilos para telas menores (tablets e telefones) */
+@media screen and (max-width: 767px) {
+    /* Coloque estilos aqui para telas menores, como telefones */
+}
+body {
+    font-size: 16px; /* Tamanho base da fonte */
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px; /* Tamanho menor da fonte para telas menores */
+    }
+}

@@ -1,0 +1,60 @@
+@media screen and (min-width: 750px) {
+    .footer-teste {
+        display: none;
+    }
+}
+
+footer {
+    background-color: rgb(9, 0, 139);
+}
+
+/*CONFIGURAÇÕES PARA TELAS MAIORES*/
+
+footer a, p {
+/*Para todos os links e parágrafos do rodapé*/
+    margin-bottom: 5px;
+    font-size: 14.5px;
+}
+
+.titulo {
+/*classe - para todos os títulos do footer*/
+    font-size: 17px;
+    font-weight: bolder;
+    color: yellow;
+}
+
+div#id-footer-top { /*CAIXA RODAPE TOP*/
+/*Alinhando as caixas na horizontal- rodapé */
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+    #id-logo-footer { /*(Crt1) caixa logo cursos*/
+        margin-bottom: 30px;
+    }
+
+
+
+    #id-links { /*(Crt2) caixa links*/
+        width: 500px;
+        justify-content: space-between;
+    }
+
+    #id-links, #id-empresas-linha {
+        /*(Crt2) caixa links*/
+        /*(Crt2) (Crt2) caixa*/
+        display: flex;
+    }
+
+
+    hr { /*Uma linha horizontal - separador*/
+        background-color: yellow;
+        margin: 20px auto 15px auto;
+        width: 90%;
+    }
+
+    div#id-footer-bottom {
+        display: flex;
+        justify-content: space-around;
+    }

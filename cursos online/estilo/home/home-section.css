@@ -1,0 +1,91 @@
+
+/*SESSÕES*/
+    #header-carousel div.carousel-inner {
+        /*Alinha todas as caixas do carrossel na horizontal*/
+        display: flex;
+    }
+
+    section#header-carousel img.d-block { /*Manipulando a altura e largura das fotos do carrossel*/
+        width: 100vw;
+        height: 630px;
+    }
+
+    .carousel-caption { /*classe das caixas com título e parágrafos - carousel*/
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.034));
+        padding: 20px;
+    }
+
+    .tema-carousel {
+        font-size: 2.5em;
+        color: rgb(72, 206, 206);
+    }
+
+    .paragrafo-carousel {
+        font-size: 1.2em;
+    }
+
+    #id-categoria { /*Sect categoria*/
+        background-color: #25343f;
+        height: 430px;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+        #id-categorias {
+            display: flex;
+            justify-content: center;
+        }
+
+            #id-categorias div{
+                margin-top: 40px;
+                padding-top: 25px;
+                border: 1px solid rgba(255, 255, 255, 0.568);
+                height: 120px;
+                width: 200px;
+                text-align: center;
+                border-radius: 5px;
+            }
+
+                #id-categoria-cientifico {
+                    margin: 0 50px;
+                }
+
+                #id-categorias div > p {
+                    align-items: center;
+                }
+
+
+    #id-destaque { /*Sect destaque*/
+        background-color: #ffffff;
+        height: 1300px;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+        .caixa-destaque { /*(Sect) caixa destaque*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            height: 350px;
+        }
+
+            #id-destaque .card-title, .card-text, h1 { /*Sect destaque*/
+                color: black;
+            }
+            
+            .card { /*(Sect) caixa livro*/
+                padding-left: 20px;
+                height: 300px;
+                justify-content: center;
+                margin: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.055);
+                transition: .5s;
+            }
+            
+            .card:hover { /*(Sect) caixa livro - efeito*/
+                box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.185);
+                height: 350px;
+                background-color: #25343f09;
+                margin: 25px;
+            }
